@@ -26,4 +26,9 @@ To look into a pack details, e.g. `wordnet`, and then install it:
 ...
 ```
 
+The packs are installed in the `$LOGTALKPACKS/packs` directory in a
+sub-directory named after the pack. When the `LOGTALKPACKS` environment
+variable is not defined, the `~/logtalk_packs/packs` directory is used
+instead.
+
 See the packs home pages for more details.
