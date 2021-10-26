@@ -39,7 +39,7 @@
 	version(
 		3:0:0,
 		stable,
-		'http://wordnetcode.princeton.edu/3.0/WNprolog-3.0.tar.gz',
+		'https://wordnetcode.princeton.edu/3.0/WNprolog-3.0.tar.gz',
 		sha256 - '54f2f03e5bdf8255529c3221ac94cfb5c2a5dc5f8693948b355dde054729b68f',
 		[],
 		all
