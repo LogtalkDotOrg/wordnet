@@ -32,7 +32,7 @@
 
 	description('Prolog version of WordNet').
 
-	license('MIT').
+	license('WordNet 3.0').
 
 	home('https://wordnet.princeton.edu/').
 
