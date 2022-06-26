@@ -2,6 +2,7 @@
 Portable Prolog WordNet resource packs
 
 - [Prolog version of WordNet 3.0](https://wordnet.princeton.edu/download/current-version#pro)
+- [A Prolog library to access WordNet](https://dectau.uclm.es/bousi-prolog/2018/08/27/applications/)
 
 To add this pack registry to your system, start Logtalk with your favorite Prolog backend and then:
 
