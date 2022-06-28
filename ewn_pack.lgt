@@ -45,6 +45,6 @@
 		all
 	).
 
-	note(install, _, 'Core files are portable but some utility files may require SWI-Prolog.')
+	note(install, _, 'Core files are portable but some utility files may require SWI-Prolog.').
 
 :- end_object.
