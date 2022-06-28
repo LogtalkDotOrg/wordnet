@@ -1,7 +1,10 @@
 # wordnet
 Portable Prolog WordNet resource packs
 
-- [Prolog version of WordNet 3.0](https://wordnet.princeton.edu/download/current-version#pro)
+- [Prolog version of WordNet 3.0](https://wordnet.princeton.edu/download/current-version#pro) (Princeton)
+- [Prolog version of WordNet 3.1.2](https://github.com/ekaf/wordnet-prolog) (Eric Kafe)
+- [Prolog version of WordNet 3.0.2](https://github.com/ekaf/wordnet-prolog) (Eric Kafe)
+- [Prolog version of English WordNet 2020](https://github.com/ekaf/wordnet-prolog) (Eric Kafe)
 - [A Prolog library to access WordNet](https://dectau.uclm.es/bousi-prolog/2018/08/27/applications/)
 
 To add this pack registry to your system, start Logtalk with your favorite Prolog backend and then:

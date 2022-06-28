@@ -18,31 +18,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-:- object(wordnet_pack,
+:- object(ewn_pack,
 	implements(pack_protocol)).
 
 	:- info([
-		version is 1:1:0,
+		version is 1:0:0,
 		author is 'Paulo Moura',
 		date is 2022-06-28,
-		comment is 'Pack manifest file for the Prolog version of WordNet (Princeton).'
+		comment is 'Pack manifest file for the Prolog versions of English WordNet (Eric Kafe).'
 	]).
 
-	name(wordnet).
+	name(ewn).
 
-	description('Prolog version of WordNet (Princeton)').
+	description('Prolog versions of English WordNet (Eric Kafe)').
 
 	license('WordNet 3.0').
 
-	home('https://wordnet.princeton.edu/').
+	home('https://github.com/ekaf/wordnet-prolog').
 
 	version(
-		3:0:0,
+		2020:4:21,
 		stable,
-		'https://wordnetcode.princeton.edu/3.0/WNprolog-3.0.tar.gz',
-		sha256 - '54f2f03e5bdf8255529c3221ac94cfb5c2a5dc5f8693948b355dde054729b68f',
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/ewn-2020-2.tar.gz',
+		sha256 - 'b9ae5af6acf97450afc2a0727a859ed1337a4303e0b00151d7d3a7a72625fe9e',
 		[],
 		all
 	).
+
+	note(install, _, 'Core files are portable but some utility files may require SWI-Prolog.')
 
 :- end_object.

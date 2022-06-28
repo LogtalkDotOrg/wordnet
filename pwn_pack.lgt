@@ -18,31 +18,43 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-:- object(wordnet_pack,
+:- object(pwn_pack,
 	implements(pack_protocol)).
 
 	:- info([
-		version is 1:1:0,
+		version is 1:0:0,
 		author is 'Paulo Moura',
 		date is 2022-06-28,
-		comment is 'Pack manifest file for the Prolog version of WordNet (Princeton).'
+		comment is 'Pack manifest file for the Prolog versions of WordNet (Eric Kafe).'
 	]).
 
-	name(wordnet).
+	name(pwn).
 
-	description('Prolog version of WordNet (Princeton)').
+	description('Prolog versions of WordNet (Eric Kafe)').
 
 	license('WordNet 3.0').
 
-	home('https://wordnet.princeton.edu/').
+	home('https://github.com/ekaf/wordnet-prolog').
 
 	version(
-		3:0:0,
+		3:1:2,
 		stable,
-		'https://wordnetcode.princeton.edu/3.0/WNprolog-3.0.tar.gz',
-		sha256 - '54f2f03e5bdf8255529c3221ac94cfb5c2a5dc5f8693948b355dde054729b68f',
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/pwn-3.1.2.tar.gz',
+		sha256 - '5f1932102b2f2627450559dd9e3f3627988f1a0c8691f7dfdb426ee3ce2298b8',
 		[],
 		all
 	).
+
+	version(
+		3:0:2,
+		stable,
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/pwn-3.0.2.tar.gz',
+		sha256 - 'f1d145c2c62f47707508e99934fb249fb9330dc536fff8c71eacee48b56b0052',
+		[],
+		all
+	).
+
+	note(install, _, 'Core files are portable but some utility files may require SWI-Prolog.')
+	note(update,  _, 'Core files are portable but some utility files may require SWI-Prolog.')
 
 :- end_object.
