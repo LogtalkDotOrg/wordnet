@@ -22,5 +22,7 @@
 :- initialization((
 	logtalk_load(wordnet_registry),
 	logtalk_load(wordnet_pack),
+	logtalk_load(ewn_pack),
+	logtalk_load(pwn_pack),
 	logtalk_load(wn_connect_pack)
 )).
