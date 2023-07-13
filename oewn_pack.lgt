@@ -1,6 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%  This file is part of Logtalk <https://logtalk.org/>
 %  Copyright 1998-2023 Paulo Moura <pmoura@logtalk.org>
 %  SPDX-License-Identifier: Apache-2.0
 %
@@ -19,11 +18,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-:- initialization((
-	logtalk_load(wordnet_registry),
-	logtalk_load(wordnet_pack),
-	logtalk_load(ewn_pack),
-	logtalk_load(oewn_pack),
-	logtalk_load(pwn_pack),
-	logtalk_load(wn_connect_pack)
-)).
+:- object(oewn_pack,
+	implements(pack_protocol)).
+
+	:- info([
+		version is 1:0:0,
+		author is 'Paulo Moura',
+		date is 2023-07-13,
+		comment is 'Pack manifest file for the Prolog versions of Open English Wordnet (Eric Kafe).'
+	]).
+
+	name(oewn).
+
+	description('Prolog versions of Open English Wordnet (Eric Kafe)').
+
+	license('WordNet 3.0').
+
+	home('https://github.com/ekaf/wordnet-prolog').
+
+	version(
+		2022,
+		stable,
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/oewn-2022.tar.gz',
+		sha256 - 'a319dfa3a021c9b576b6719be9ed22e23072b2e5a6bfc0265768752cae303f64',
+		[],
+		all
+	).
+
+	note(install, _, 'Core files are portable but some utility files may require SWI-Prolog.').
+
+:- end_object.
