@@ -37,7 +37,7 @@
 	home('https://github.com/ekaf/wordnet-prolog').
 
 	version(
-		2025,
+		2025:0:0,
 		stable,
 		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/oewn-2025-plus.tar.gz',
 		sha256 - '3aaca4738a325ab7be07146bf1e6ac3d368c27f92cf6a905eeb78fb76325621a',
@@ -46,7 +46,7 @@
 	).
 
 	version(
-		2022,
+		2022:0:0,
 		stable,
 		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/oewn-2022.tar.gz',
 		sha256 - 'a319dfa3a021c9b576b6719be9ed22e23072b2e5a6bfc0265768752cae303f64',
