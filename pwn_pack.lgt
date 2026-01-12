@@ -22,9 +22,9 @@
 	implements(pack_protocol)).
 
 	:- info([
-		version is 1:0:0,
+		version is 2:0:0,
 		author is 'Paulo Moura',
-		date is 2022-06-28,
+		date is 2026-01-12,
 		comment is 'Pack manifest file for the Prolog versions of WordNet (Eric Kafe).'
 	]).
 
@@ -37,10 +37,28 @@
 	home('https://github.com/ekaf/wordnet-prolog').
 
 	version(
+		3:1:6,
+		stable,
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/pwn-3.1.6.tar.gz',
+		sha256 - 'b6f4cf84e6987753712329e241510772f975af61971a389c75db24907588db57',
+		[],
+		all
+	).
+
+	version(
 		3:1:2,
 		stable,
 		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/pwn-3.1.2.tar.gz',
 		sha256 - '5f1932102b2f2627450559dd9e3f3627988f1a0c8691f7dfdb426ee3ce2298b8',
+		[],
+		all
+	).
+
+	version(
+		3:0:4,
+		stable,
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/pwn-3.0.4.tar.gz',
+		sha256 - 'ccc04427d65a8ce403bf5e548b55e9437dc7a9bbf780b218591722c3500fb282',
 		[],
 		all
 	).

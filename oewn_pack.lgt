@@ -22,9 +22,9 @@
 	implements(pack_protocol)).
 
 	:- info([
-		version is 1:0:0,
+		version is 2:0:0,
 		author is 'Paulo Moura',
-		date is 2023-07-13,
+		date is 2026-01-12,
 		comment is 'Pack manifest file for the Prolog versions of Open English Wordnet (Eric Kafe).'
 	]).
 
@@ -35,6 +35,15 @@
 	license('WordNet 3.0').
 
 	home('https://github.com/ekaf/wordnet-prolog').
+
+	version(
+		2025,
+		stable,
+		'https://github.com/ekaf/wordnet-prolog/archive/refs/tags/oewn-2025-plus.tar.gz',
+		sha256 - '3aaca4738a325ab7be07146bf1e6ac3d368c27f92cf6a905eeb78fb76325621a',
+		[],
+		all
+	).
 
 	version(
 		2022,
